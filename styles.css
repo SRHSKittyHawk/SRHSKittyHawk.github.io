@@ -1,0 +1,152 @@
+@font-face { 
+    font-family:'gaegu';
+    src:url('fonts/Gaegu/Gaegu-Regular.ttf');
+}
+@font-face {
+    font-family:'sniglet';
+    src:url('fonts/Sniglet/Sniglet-Regular.ttf');
+}
+@font-face {
+    font-family:"worksans";
+    src:url('fonts/Work_Sans/WorkSans-VariableFont_wght.ttf')
+}
+/*mobile*/
+@media (max-width: 1033px) {
+    .HideOnMobile {
+        display: none;
+    }
+    .ShowOnMobile {
+        display: initial;
+    }
+    .header_link{
+        font-size: 4vh;
+    }
+    .nav-item{
+        font-size: 3vh;
+        background-color: rgba(141, 185, 223,0.9);
+        color: white;
+    }
+    .main{
+        padding-bottom: 40vh;
+    }
+}
+
+/*non-mobile*/
+    @media (min-width: 1033px) {
+    
+    .HideOnMobile {
+        display: initial;
+    }
+    .ShowOnMobile {
+        display: none;
+    }
+    .header_link{
+        font-size: 6vh;
+    }
+    .nav-item{
+        font-size: 4vh;
+        padding: 2vw;
+        color: black;
+    }
+    .main{
+        padding-bottom: 25vh;
+    }
+}        
+
+.HideOnMobile .container{
+    display:flex;
+}
+
+.ShowOnMobile .container{
+    display:block;
+}
+
+body {
+    background-color: #8db9df;
+    overflow-x:hidden;
+    font-family: worksans;
+    height: 100%;
+    position: relative;
+}
+
+nav {
+    background-image: url("images/sketches/kittyhawkclouddrawing(v7).svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #8db9df;
+    background-position: center;
+    height: 30vh;
+    display: flex;
+    align-content: flex-start;    
+}
+button{
+    background-color: #8db9df;
+}
+.navbar{
+    align-items: flex-start;
+}
+.header_link {
+    font-family: sniglet;
+    color: #49a078;
+    padding: 2vw;
+    
+}
+.nav-link:link, .nav-link:visited {
+    color:black;
+    
+}
+.header-link:link, .header-link:visited {
+    color: #49a078;
+}
+.header_link:hover, .nav-link:hover {
+    color: #49a078;
+}
+.nav-item {
+    font-family: gaegu;
+    
+}
+.main{
+    min-height: 100vh;
+    overflow: hidden;
+    display: block;
+    position: relative;
+}
+
+.main{
+    min-height: 100vh;
+    /*overflow: hidden;*/
+    display: block;
+    position: relative;
+    /*background-color:#8db9df;*/
+}
+
+.tag{
+    padding:2vw;
+}
+
+/*footer*/
+footer {
+    bottom:0;
+    left:0;
+    background-color: white;
+    border-top-color: #011627;
+    border-top-style: solid;
+    position: absolute;
+    width: 100%;  
+    font-family: gaegu;
+    color:#49a078;
+    text-align:center;
+}
+.name {
+    font-family: 'Sniglet';
+    font-size: 5vh;
+    margin-left:5vw;
+    margin-right:2vw;
+}
+
+.form_image{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 23%;
+}

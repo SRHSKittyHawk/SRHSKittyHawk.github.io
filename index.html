@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="slideshow.css">
+        <title>SRHS Kitty Hawk</title> <!--the title displayed in the browser tab-->
+        <link rel="shortcut icon" type="image/x-icon" href='favicon.ico'> <!--adds the kittyhawk logo in the browser tab-->
+        
+        <style> 
+            /*mobile*/
+            @media (max-width: 1033px) {
+                #info p{
+                    font-size: 1.8vh;
+                }
+            }
+
+            /*non-mobile*/
+            @media (min-width: 1033px) {
+                #info p{
+                    font-size: 2.5vh;
+                }
+            }       
+            html, body{
+                background-color: white;
+            }
+            #ourName {
+                color:white;
+            }
+            #heading_image {
+                width: 70vw;
+                margin-left: 15vw;
+                margin-right: 15vw;
+            }
+            #info {
+               background-image: url("images/sketches/cloud2.png");
+               background-size: cover;
+            }
+            #about{
+                background-color: rgba(141, 185, 223,0.9);
+                width: 70vw;
+                margin-left: 15vw;
+                margin-right: 15vw;
+                color: white;
+                text-align: center;
+                border: 1px solid rgba(141, 185, 223,0.9);
+                padding: 10px;
+                border-radius: 25px;
+            }
+            
+        </style>
+
+    </head>
+
+    <body>
+        <nav class="navbar navbar-expand-lg nav_color">
+            <img src="images/sketches/logo_cat_blank_background.png" alt="website logo" class="HideOnMobile">
+            <a class="navbar-brand header_link" href="index.html">SRHS Kitty Hawk Tutors</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <img src="images/sketches/logo_cat_blank_background.png" alt="click me!">
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="resources.html">Resources</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="study.html">Study With Me</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="events.html">Upcoming Events</a>
+                </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!--<h1 id = "ourName"> SRHS CA-935th KITTY HAWK </h1>-->
+        <div class="main">
+
+            <div id="info">
+                <img src="images/Edited January Monthly Meeting.png" id="heading_image">
+                <img src="images/tags/homepage_intro_tag.png" class="tag">
+                <!--ISABELLA WANTS A MORE SPECIFIC "ABOUT ME": SPECIFIC INFO ABOUT STAFF-->
+                <div id="about">
+                    <p>
+                        Welcome to the <strong>CA-935th Kitty Hawk Air Society!</strong> Kitty Hawk is our AFJROTC unit’s national honor society. We are dedicated to <strong>helping every single cadet</strong>
+                        in the unit with all of their academic needs. By providing <strong>daily walk-in and weekly tutoring on all weekdays, morning, lunch, and afterschool</strong>, we hope 
+                        to help you as tutors, study buddies, and mentors! We also have events such as <strong>study sessions, workshops, lectures, and much more</strong>. Our goal is to create 
+                        new and healthy perspectives on academics, help high schoolers balance their lives as students and cadets, and assist in developing helpful and productive 
+                        study techniques. <strong>The Commander of the Kitty Hawk Air Society is c/2d Lt Annalisa Boquiren, the AOIC is c/2d Lt Bowie Murthy, and the NCO is c/TSgt Akshar 
+                        Udas. Reach out to us on Discord (CC - @annalisa_251, AOIC - @lilithswoe, NCO - @axr.28) if you have any questions!</strong> 
+                    </p>  
+                </div>         
+
+                <!-- Slideshow container -->
+                <div class="slideshow-container">
+                    <!-- Full-width images with number and caption text -->
+                     <div class="mySlides">
+                        <img src="images/slideshow_photos/team.webp" style="width:100%">
+                        <h5 class="text">Our 2024-2025 team!</h5>
+                    </div>
+
+                    <div class="mySlides">
+                        <img src="images/slideshow_photos/FY - Olivia.jpg" style="width:100%">
+                        <h5 class="text"> Kitty Hawk Tutors! </h5>
+                    </div>
+
+                    <div class="mySlides">
+                        <img src="images/slideshow_photos/Shift.jpg" style="width:100%">
+                        <h5 class="text">Harini and Annalisa on Shift!</h5>
+                    </div>
+
+                    <div class="mySlides">
+                        <img src="images/slideshow_photos/Shift(1).jpg" style="width:100%">
+                        <h5 class="text">Tutoring in Session!</h5>
+                    </div>
+
+                    <div class="mySlides">
+                        <img src="images/slideshow_photos/AP_Bio_Session.webp" style="width:100%">
+                        <h5 class="text">AP Biology Study Session!</h5>
+                    </div>
+
+                    <div class="mySlides">
+                        <img src="images/slideshow_photos/Articulation_Panel.jpg" style="width:100%">
+                        <h5 class="text">Articulation Q&A Panel!</h5>
+                    </div>
+
+                    <!-- Next and previous buttons -->
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                    <br>
+                </div>
+            </div>
+
+        </div>
+
+        <footer class="HideOnMobile">
+            <div class="container">
+                <div class="form_elements">
+                    <img src="images/sketches/logo_cat_blank_background.png">
+                </div>
+                <div class="form_elements">
+                    <h1 class="name">SRHS Kitty Hawk</h1>
+                    <h1>Sanctioned, endorsed, and supported by AFJROTC and CA-935th</h1>
+                </div>
+            </div>
+        </footer>
+      
+        <footer class="ShowOnMobile">
+        <div class="container">
+            <div class="form_image">
+                <img src="images/sketches/logo_cat_blank_background.png">
+            </div>
+            <div class="form_elements">
+                <h1 class="name">SRHS Kitty Hawk</h1>
+                <h1>Sanctioned, endorsed, and supported by AFJROTC and CA-935th</h1>
+            </div>
+        </div>
+        </footer>
+
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <script>
+            let slideIndex = 1;
+            showSlides(slideIndex);
+
+            // Next/previous controls
+            function plusSlides(n) {
+            showSlides(slideIndex += n);
+            }
+
+            // Thumbnail image controls
+            function currentSlide(n) {
+            showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";
+            dots[slideIndex-1].className += " active";
+            }
+        </script>
+    </body>
+</html> 
