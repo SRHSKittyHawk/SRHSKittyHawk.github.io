@@ -19,7 +19,21 @@
                 position:relative;
             }
 
-            .study_section_desktop, .tutee_section_desktop {
+            .study_section_desktop {
+                width: 32vw;
+                height:auto;
+                line-height: 1.1;
+                text-align:center;
+                font-size:4vh;
+                color: white;
+                display:flex;
+                justify-content:center;
+                border: 6px solid black;
+                border-radius: 70px;
+                font-family: gaegu;
+            }
+
+            .tutee_section_desktop {
                 width:25vw;
                 height:auto;
                 line-height: 1.1;
@@ -66,9 +80,13 @@
             .links_mobile{
                 text-align: center;
             }
+
             .row {
-                margin-left:10vw;
-            }
+                margin-left: 10vw;
+                margin-right: 10vw;
+                justify-content: center;
+
+            }            
 
             #comming_soon{
                 text-align: center;
@@ -76,11 +94,49 @@
                 font-family: gaegu;
             }
             
+            .apResource{
+                cursor: pointer;
+                border-radius: .5vw;
+                padding: 1vw;
+            }
+
+            .apResource .apIcon{
+                height: 20vh;
+            }
+            
+            .apResource h2{
+                text-align: center;
+                font-family: gaegu;
+                color: black;
+                text-decoration: none;
+            }
+
+            a:hover{
+                text-decoration: none;
+            }
+
+            .apResourceMobile{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .apResourceMobile .apIcon {
+                height: 15vh;
+                justify-content: center;
+            }
+
+            .apResourceMobile h2 {
+                font-family: gaegu;
+                font-size: 4rem;
+                text-align: center;
+                color: black;
+            }
+
         </style>
 
     </head>
 
-    <!--calc pre-test in place of talk-tuah-->
     <body>
         <nav class="navbar navbar-expand-lg nav_color">
             <img src="images/sketches/logo_cat_blank_background.png" alt="website logo" class="HideOnMobile">
@@ -103,22 +159,92 @@
             </div>
         </nav>
         <div class="main">
-            <img src="images/tags/study_resources_tag.png" class="tag">
+            <img src="images/tags/ap_resources_tag.png" class="tag">
             <div class="HideOnMobile">
                 <!-- row 1-->
                 <div class='row'>
                     <div class='floaters'>
-                        <div class='study_section_desktop'> 
-                            Study Guides
+                        <div class="apResource">
+                            <a target="_blank" href="https://docs.google.com/document/d/1Ndl8rXofJHxpFJVcglEAsYZWw0Pd7Kspjz8ZXvm2ke4/edit?tab=t.0#heading=h.e6mehx8bzlsa">
+                                <img class="apIcon" src="images/sketches/book.png">
+                                <h2>AP Lang</h2>
+                            </a>
                         </div>
-                        <ul>   
-                            <li> <a href="https://docs.google.com/document/d/1Ndl8rXofJHxpFJVcglEAsYZWw0Pd7Kspjz8ZXvm2ke4/edit?tab=t.0#heading=h.e6mehx8bzlsa" class="study_resources"> AP English Language </a> </li>
-                            <li> <a href="https://docs.google.com/document/d/1pCDWQDSFc7zzEm2V-rlA3qtsoRRn5KHVAhjWl18u_Ww/edit?tab=t.0#heading=h.e6mehx8bzlsa" class="study_resources"> AP Biology </a> </li>
-                            <li> <a href="https://docs.google.com/document/d/1n1w1CQ_HQdOR46IW12JNU5lS6gwIX3HoOJWrsWl2LXw/edit?tab=t.0#heading=h.e6mehx8bzlsa" class="study_resources"> AP US History </a> </li>
-                            <li> <a href="https://docs.google.com/document/d/1bOpYXD-l09eHr_CB6qDv00yOg7by9En_fYHL9XiVg98/edit?tab=t.0#heading=h.e6mehx8bzlsa" class="study_resources"> AP European History </a> </li> 
-                        </ul>
                     </div> 
 
+                    <div class='floaters'>
+                        <div class="apResource">
+                            <a target="_blank" href="https://docs.google.com/document/d/1n1w1CQ_HQdOR46IW12JNU5lS6gwIX3HoOJWrsWl2LXw/edit?tab=t.0#heading=h.e6mehx8bzlsa">
+                                <img class="apIcon" src="images/sketches/airplane only.png">
+                                <h2>AP US History</h2>
+                            </a>
+                        </div>
+                    </div> 
+
+                    <div class='floaters'>
+                        <div class="apResource">
+                            <a target="_blank" href="https://docs.google.com/document/d/1bOpYXD-l09eHr_CB6qDv00yOg7by9En_fYHL9XiVg98/edit?tab=t.0#heading=h.e6mehx8bzlsa">
+                                <img class="apIcon" src="images/sketches/ink.png">
+                                <h2>AP Euro</h2>
+                            </a>
+                        </div>
+                    </div> 
+
+                    <div class='floaters'>
+                        <div class="apResource">
+                            <a target="_blank" href="https://docs.google.com/document/d/1pCDWQDSFc7zzEm2V-rlA3qtsoRRn5KHVAhjWl18u_Ww/edit?tab=t.0#heading=h.e6mehx8bzlsa">
+                                <img class="apIcon" src="images/sketches/dna.png">
+                                <h2>AP Bio</h2>
+                            </a>
+                        </div>
+                    </div> 
+                
+                </div>
+            </div>
+            
+            <div class="ShowOnMobile">
+                <div class='floaters'>
+                        <div class="apResourceMobile">
+                            <a target="_blank" href="https://docs.google.com/document/d/1Ndl8rXofJHxpFJVcglEAsYZWw0Pd7Kspjz8ZXvm2ke4/edit?tab=t.0#heading=h.e6mehx8bzlsa">
+                                <img class="apIcon" src="images/sketches/book.png">
+                                <h2>AP Lang</h2>
+                            </a>
+                        </div>
+                    </div> 
+
+                    <div class='floaters'>
+                        <div class="apResourceMobile">
+                            <a target="_blank" href="https://docs.google.com/document/d/1n1w1CQ_HQdOR46IW12JNU5lS6gwIX3HoOJWrsWl2LXw/edit?tab=t.0#heading=h.e6mehx8bzlsa">
+                                <img class="apIcon" src="images/sketches/airplane only.png">
+                                <h2>AP US History</h2>
+                            </a>
+                        </div>
+                    </div> 
+
+                    <div class='floaters'>
+                        <div class="apResourceMobile">
+                            <a target="_blank" href="https://docs.google.com/document/d/1bOpYXD-l09eHr_CB6qDv00yOg7by9En_fYHL9XiVg98/edit?tab=t.0#heading=h.e6mehx8bzlsa">
+                                <img class="apIcon" src="images/sketches/ink.png">
+                                <h2>AP Euro</h2>
+                            </a>
+                        </div>
+                    </div> 
+
+                    <div class='floaters'>
+                        <div class="apResourceMobile">
+                            <a target="_blank" href="https://docs.google.com/document/d/1pCDWQDSFc7zzEm2V-rlA3qtsoRRn5KHVAhjWl18u_Ww/edit?tab=t.0#heading=h.e6mehx8bzlsa">
+                                <img class="apIcon" src="images/sketches/dna.png">
+                                <h2>AP Bio</h2>
+                            </a>
+                        </div>
+                    </div> 
+                
+            </div>
+
+            <img src="images/tags/tutee_resources_tag.png" class="tag">
+            <div class="HideOnMobile">
+                <!-- row 1-->
+                <div class='row' class="typeOne">
                     <div class='floaters'>
                         <div class='study_section_desktop'> 
                             SAT Prep Videos
@@ -131,18 +257,7 @@
                             <li> <a href="https://drive.google.com/file/d/1Q8mBJmeOEjpf1Vhg_6TZZeedhfM_iwSw/view?usp=drive_link" class="study_resources"> SAT Day 5, General Tips </a> </li>
                         </ul>
                     </div> 
-            
-                    <div class='floaters'>
-                        <div class='study_section_desktop'> 
-                            Articulation 
-                        </div> 
-                        <ul>
-                            <li> <a href="articulationguides.pdf" class="study_resources"> Articulation Guides, all subjects </a> </li>
-                        <ul>
-                    </div> 
-                </div>
-                <!--row 2-->
-                <div class='row'>
+
                     <div class='floaters'>
                         <div class='study_section_desktop'> 
                             Advanced Physics
@@ -153,6 +268,11 @@
                             <li> <a href="https://docs.google.com/presentation/d/1XZJuOtH1fr9SdZP-A1dnmkRx53fdRxVVcKnVy4S6Af8/edit?usp=drive_link" class="study_resources"> Adv. Physics Study Session Presentation </a> </li>
                         </ul>
                     </div>
+            
+                </div>
+                <!--row 2-->
+                <div class='row' class="typeOne">
+                    
                 
                     <div class='floaters'>
                         <div class='study_section_desktop'> 
@@ -167,25 +287,17 @@
 
                     <div class='floaters'>
                         <div class='study_section_desktop'> 
-                            Pre-Test
+                            Other Resources
                         </div> 
+                        <li> <a href="articulationguides.pdf" class="study_resources"> Articulation Guides, all subjects </a> </li>
                         <li> <a href="https://docs.google.com/document/d/1S3XiX4pCoMiujF7nCtNJAzRqJWny4d6CohkUrHl0z9o/edit?tab=t.0#heading=h.e6mehx8bzlsa" class="study_resources"> AP Calculus AB Pre-Test </a> </li>
                     </div> 
                 </div>
             </div>
 
-            <div class="ShowOnMobile">
-                <div class='study_section_mobile'> 
-                    Study Guides
-                </div>
-                <div class="links_mobile">
-                    <a href="https://docs.google.com/document/d/1S3XiX4pCoMiujF7nCtNJAzRqJWny4d6CohkUrHl0z9o/edit?tab=t.0#heading=h.e6mehx8bzlsa" class="study_resources"> AP Calculus AB Pre-Test </a> <br>
-                    <a href="https://docs.google.com/document/d/1Ndl8rXofJHxpFJVcglEAsYZWw0Pd7Kspjz8ZXvm2ke4/edit?tab=t.0#heading=h.e6mehx8bzlsa" class="study_resources"> AP English Language </a> <br>
-                    <a href="https://docs.google.com/document/d/1pCDWQDSFc7zzEm2V-rlA3qtsoRRn5KHVAhjWl18u_Ww/edit?tab=t.0#heading=h.e6mehx8bzlsa" class="study_resources"> AP Biology </a> <br>
-                    <a href="https://docs.google.com/document/d/1n1w1CQ_HQdOR46IW12JNU5lS6gwIX3HoOJWrsWl2LXw/edit?tab=t.0#heading=h.e6mehx8bzlsa" class="study_resources"> AP US History </a> <br>
-                    <a href="https://docs.google.com/document/d/1bOpYXD-l09eHr_CB6qDv00yOg7by9En_fYHL9XiVg98/edit?tab=t.0#heading=h.e6mehx8bzlsa" class="study_resources"> AP European History </a> <br>
-                </div>
+            
 
+            <div class="ShowOnMobile">
                 <div class='study_section_mobile'> 
                     SAT Prep Videos
                 </div> 
@@ -197,11 +309,8 @@
                     <a href="https://drive.google.com/file/d/1Q8mBJmeOEjpf1Vhg_6TZZeedhfM_iwSw/view?usp=drive_link" class="study_resources"> SAT Day 5, General Tips </a> <br>
                 </div>
             
-                <div class='study_section_mobile'> 
-                    Articulation 
-                </div> 
                 <div class="links_mobile">
-                    <a href="articulationguides.pdf" class="study_resources"> Articulation Guides, all subjects </a>
+                    
                 </div>
                 
                 <div class='study_section_mobile'> 
@@ -223,84 +332,11 @@
                 </div>
 
                 <div class='study_section_mobile'> 
-                    Pre-Test
+                    Other Resources
                 </div> 
                 <div class="links_mobile">
-                    <a href="https://docs.google.com/document/d/1S3XiX4pCoMiujF7nCtNJAzRqJWny4d6CohkUrHl0z9o/edit?tab=t.0#heading=h.e6mehx8bzlsa" class="study_resources"> AP Calculus AB Pre-Test </a>
-                </div>
-            </div>
-
-            <!--add a note that says top three coming soon!-->
-            <img src="images/tags/tutee_resources_tag.png" class="tag">
-            <div class="HideOnMobile">
-                <!-- row 1-->
-                <div class='row'>
-                    <div class='floaters'>
-                        <div class='tutee_section_desktop'> 
-                            <a href=""  class="tutee_resources"> Scholarship Review*</a>
-                        </div>
-                    </div> 
-
-                    <div class='floaters'>
-                        <div class='tutee_section_desktop'> 
-                            <a href="https://docs.google.com/document/d/1qgMuSrYWD2RoLGshXa_YNvs_H71VTqfGzOEbtbrbi3o/edit?usp=sharing"  class="tutee_resources"> Shift Schedule </a>
-                        </div> 
-                    </div> 
-            
-                    <div class='floaters'>
-                        <div class='tutee_section_desktop'> 
-                            <a href="https://forms.gle/5KtGo6rocYxNJTE1A" class="tutee_resources"> Tutor Request </a> 
-                        </div> 
-                    </div> 
-                </div>
-                <!--row 2-->
-                <div class='row'>
-                    <div class='floaters'>
-                        <div class='tutee_section_desktop'> 
-                            <a href="https://educationafjrotc.github.io/ca935theducation/" class="tutee_resources"> Education Website </a>
-                        </div> 
-                    </div>
-                
-                    <div class='floaters'>
-                        <div class='tutee_section_desktop'> 
-                            <a href="https://ca-935th.com/kittyhawk/" class="tutee_resources"> CA-935th Website </a>
-                        </div> 
-                    </div> 
-
-                    <div class='floaters'>
-                        <div class='tutee_section_desktop'> 
-                            <a href="https://www.instagram.com/ca935.kittyhawk/" class="tutee_resources"> Our Instagram </a>
-                        </div> 
-                    </div> 
-                </div>
-                <h1 id="comming_soon"> *Coming Soon! </h1>
-            </div>
-
-            <div class="ShowOnMobile">
-                <div class='tutee_section_mobile'> 
-                    <a href=""  class="tutee_resources"> Scholarship Review*</a>
-                </div>
-
-                <div class='tutee_section_mobile'> 
-                    <a href=" "  class="tutee_resources"> Shift Schedule* </a>
-                </div> 
-    
-                <div class='tutee_section_mobile'> 
-                    <a href=" " class="tutee_resources"> Tutor Request* </a> 
-                </div> 
-
-                <div class='tutee_section_mobile'> 
-                    <a href="https://educationafjrotc.github.io/ca935theducation/" class="tutee_resources"> Education Website </a>
-                </div> 
-
-                <div class='tutee_section_mobile'> 
-                    <a href="https://ca-935th.com/kittyhawk/" class="tutee_resources"> CA-935th Website </a>
-                </div> 
-
-                <div class='tutee_section_mobile'> 
-                    <a href="https://www.instagram.com/ca935.kittyhawk/" class="tutee_resources"> Our Instagram </a>
-                </div>  
-                <h2 id="comming_soon"> *Coming Soon! </h2>
+                    <a href="https://docs.google.com/document/d/1S3XiX4pCoMiujF7nCtNJAzRqJWny4d6CohkUrHl0z9o/edit?tab=t.0#heading=h.e6mehx8bzlsa" class="study_resources"> AP Calculus AB Pre-Test </a> <br>
+                    <a href="articulationguides.pdf" class="study_resources"> Articulation Guides, all subjects </a>
             </div>
         </div>
         
