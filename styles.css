@@ -2,22 +2,23 @@
     font-family:'gaegu';
     src:url('fonts/Gaegu/Gaegu-Regular.ttf');
 }
+
 @font-face {
     font-family:'sniglet';
     src:url('fonts/Sniglet/Sniglet-Regular.ttf');
 }
+
 @font-face {
     font-family:"worksans";
     src:url('fonts/Work_Sans/WorkSans-VariableFont_wght.ttf')
 }
+
 /*mobile*/
-@media (max-width: 1033px) {
+@media (max-width: 1300px) {
     .HideOnMobile {
         display: none;
     }
-    .ShowOnMobile {
-        display: initial;
-    }
+    
     .header_link{
         font-size: 4vh;
     }
@@ -32,7 +33,7 @@
 }
 
 /*non-mobile*/
-    @media (min-width: 1033px) {
+@media (min-width: 1300px) {
     
     .HideOnMobile {
         display: initial;
@@ -63,6 +64,7 @@
 
 body {
     background-color: #8db9df;
+    max-width: 100%;
     overflow-x:hidden;
     font-family: worksans;
     height: 100%;
@@ -79,45 +81,44 @@ nav {
     display: flex;
     align-content: flex-start;    
 }
+
 button{
     background-color: #8db9df;
 }
+
 .navbar{
     align-items: flex-start;
 }
+
 .header_link {
     font-family: sniglet;
     color: #49a078;
     padding: 2vw;
     
 }
+
 .nav-link:link, .nav-link:visited {
     color:black;
     
 }
+
 .header-link:link, .header-link:visited {
     color: #49a078;
 }
+
 .header_link:hover, .nav-link:hover {
     color: #49a078;
 }
+
 .nav-item {
     font-family: gaegu;
-    
 }
+
 .main{
     min-height: 100vh;
     overflow: hidden;
     display: block;
     position: relative;
-}
-
-.main{
-    min-height: 100vh;
-    /*overflow: hidden;*/
-    display: block;
-    position: relative;
-    /*background-color:#8db9df;*/
 }
 
 .tag{
@@ -137,6 +138,7 @@ footer {
     color:#49a078;
     text-align:center;
 }
+
 .name {
     font-family: 'Sniglet';
     font-size: 5vh;

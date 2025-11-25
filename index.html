@@ -4,48 +4,107 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
         <link rel="stylesheet" href="styles.css">
         <link rel="stylesheet" href="slideshow.css">
+        <link rel="stylesheet" href="chalkboard.css">
         <title>SRHS Kitty Hawk</title> <!--the title displayed in the browser tab-->
         <link rel="shortcut icon" type="image/x-icon" href='favicon.ico'> <!--adds the kittyhawk logo in the browser tab-->
         
         <style> 
-            /*mobile*/
-            @media (max-width: 1033px) {
-                #info p{
-                    font-size: 1.8vh;
-                }
+
+            html, body{
+                background-color:white;
+                max-width: 100%;
             }
 
-            /*non-mobile*/
-            @media (min-width: 1033px) {
-                #info p{
-                    font-size: 2.5vh;
-                }
-            }       
-            html, body{
-                background-color: white;
-            }
             #ourName {
                 color:white;
             }
+
             #heading_image {
                 width: 70vw;
                 margin-left: 15vw;
                 margin-right: 15vw;
             }
+
             #info {
                background-image: url("images/sketches/cloud2.png");
                background-size: cover;
+               padding-top: 2vh;
             }
-            #about{
-                background-color: rgba(141, 185, 223,0.9);
-                width: 70vw;
-                margin-left: 15vw;
-                margin-right: 15vw;
+
+            #about_desktop, #about_mobile{
+                background-color: rgb(141, 185, 223);
                 color: white;
                 text-align: center;
-                border: 1px solid rgba(141, 185, 223,0.9);
                 padding: 10px;
+                font-size: 20px;
+            }
+
+            #about_desktop{
+                border: 1px solid rgb(141, 185, 223);
                 border-radius: 25px;
+                float: left;
+                width: 45vw;
+                margin-left: 5vw;
+            }
+
+
+            #team_photo_desktop{
+                float: right; 
+                width:40vw;
+                margin-right: 5vw;
+                padding-bottom: 5vh
+            }
+
+            #team_photo_mobile{
+                width: 60vw;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .tutee_section_desktop, .tutee_section_mobile{
+                background-color: #49a078;
+                border: 6px solid black;
+                font-family: gaegu;
+                text-align: center;
+                font-size: 40px;
+                color: white;
+            }
+
+            .tutee_section_desktop:hover{
+                background-color: #8abd9e;
+                color: black;
+                text-decoration-color: black;
+                -webkit-text-decoration-color: black;
+            }
+            .tutee_section_desktop{
+                width: 30vw; 
+                height: 8vh;
+                border-radius: 70px;
+                font-size: 2.5vw;
+            }
+
+            .tutee_section_mobile{
+                width: 75vw;
+                height: 4vh;
+                margin-left: 12.5vw;
+                margin-top: 2vh;
+                border-radius: 50px;
+                font-size: 2.5vh;
+            }
+
+            /*.tutee_resources{
+                color: white;
+                font-size: 45px;
+            }*/
+
+
+            td{
+                padding: 1.67vw;
+            }
+
+            .ourlinks a{
+                color: white;
             }
             
         </style>
@@ -74,14 +133,88 @@
             </div>
         </nav>
 
-        <!--<h1 id = "ourName"> SRHS CA-935th KITTY HAWK </h1>-->
         <div class="main">
+            <div style="background-color: #8db9df">
+                <!--Chalkboard with upcomming events-->
+                <div class="HideOnMobile">
+                    <div id="outermost_box_desktop"> 
+                        <div id="middle_box_desktop">
+                            <div id="innermost_box_desktop"> 
+                                <h1 id="chalkboard_title"> SRHS KITTY HAWK </h1>
+                                <div id="line"></div>
+                                <h3 id="chalkboard_subtitle"> Upcoming Events! </h3>
+                                <ul id="chalkboard_list_desktop">
+                                    <li> 11/15 Self Studying for AP Tests Study Tip </li>
+                                    <li> 11/29 Studying Techniques Study Tip </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-            <div id="info">
-                <img src="images/Edited January Monthly Meeting.png" id="heading_image">
-                <img src="images/tags/homepage_intro_tag.png" class="tag">
-                <!--ISABELLA WANTS A MORE SPECIFIC "ABOUT ME": SPECIFIC INFO ABOUT STAFF-->
-                <div id="about">
+                <div class="ShowOnMobile">
+                    <div id="outermost_box_mobile"> 
+                        <div id="middle_box_mobile">
+                            <div id="innermost_box_mobile"> 
+                                <h1 id="chalkboard_title"> SRHS KITTY HAWK </h1>
+                                <div id="line"></div>
+                                <h3 id="chalkboard_subtitle"> Upcoming Events! </h3>
+                                <ul id="chalkboard_list_mobile">
+                                    <li> 11/15 Self Studying for AP Tests Study Tip </li>
+                                    <li> 11/29 Studying Techniques Study Tip </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Resources-->
+                <img src="images/tags/ourlinks.png" class="tag">
+                <div class="HideOnMobile">
+                    <table>
+                        <tr>
+                            <td> <a href="https://forms.gle/skbEuiXdHVpD1BWW7"  target="_blank" class="tutee_resources"> <div class="tutee_section_desktop"> Scholarship Review </div> </a> </td>
+                            <td> <a href="https://docs.google.com/document/d/1qgMuSrYWD2RoLGshXa_YNvs_H71VTqfGzOEbtbrbi3o/edit?usp=sharing"  target="_blank" class="tutee_resources"> <div class="tutee_section_desktop"> Shift Schedule </div> </a> </td>
+                            <td> <a href="https://forms.gle/5KtGo6rocYxNJTE1A" target="_blank" class="tutee_resources"> <div class="tutee_section_desktop"> Tutor Request </div> </a> </td>
+                        </tr>
+                        <tr>
+                            <td> <a href="https://educationafjrotc.github.io/ca935theducation/" target="_blank" class="tutee_resources"> <div class="tutee_section_desktop"> Education Website </div> </a> </td>
+                            <td> <a href="https://ca-935th.com/kittyhawk/" target="_blank" class="tutee_resources"> <div class="tutee_section_desktop"> CA-935th Website </div> </a> </td>
+                            <td> <a href="https://www.instagram.com/ca935.kittyhawk/" target="_blank" class="tutee_resources"> <div class="tutee_section_desktop"> Our Instagram </div> </a> </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="ShowOnMobile"> 
+                    <a href="https://forms.gle/skbEuiXdHVpD1BWW7" target="_blank" class="tutee_resources"> 
+                        <div class='tutee_section_mobile'> Scholarship Review </div>
+                    </a>
+ 
+                    <a href="https://docs.google.com/document/d/1qgMuSrYWD2RoLGshXa_YNvs_H71VTqfGzOEbtbrbi3o/edit?usp=sharing" target="_blank" class="tutee_resources"> 
+                        <div class='tutee_section_mobile'> Shift Schedule </div>
+                    </a> 
+ 
+                    <a href="https://forms.gle/5KtGo6rocYxNJTE1A" target="_blank" class="tutee_resources"> 
+                        <div class='tutee_section_mobile'> Tutor Request </div>
+                    </a>  
+
+                    <a href="https://educationafjrotc.github.io/ca935theducation/" target="_blank" class="tutee_resources"> 
+                        <div class='tutee_section_mobile'> Education Website </div>
+                    </a> 
+ 
+                    <a href="https://ca-935th.com/kittyhawk/" target="_blank" class="tutee_resources"> 
+                        <div class='tutee_section_mobile'>CA-935th Website </div>
+                    </a>
+
+                    <a href="https://www.instagram.com/ca935.kittyhawk/" target="_blank" class="tutee_resources"> 
+                        <div class='tutee_section_mobile'> Our Instagram  </div>
+                    </a>
+                </div>
+                <img src="images/tags/homepage_intro_tag.png" target="_blank" class="tag">
+            </div>
+            <!--ISABELLA WANTS A MORE SPECIFIC "ABOUT ME": SPECIFIC INFO ABOUT STAFF-->
+            <!--about us-->
+            <div class="HideOnMobile">
+                <div id="about_desktop">
                     <p>
                         Welcome to the <strong>CA-935th Kitty Hawk Air Society!</strong> Kitty Hawk is our AFJROTC unit’s national honor society. We are dedicated to <strong>helping every single cadet</strong>
                         in the unit with all of their academic needs. By providing <strong>daily walk-in and weekly tutoring on all weekdays, morning, lunch, and afterschool</strong>, we hope 
@@ -90,16 +223,33 @@
                         study techniques. <strong>The Commander of the Kitty Hawk Air Society is c/2d Lt Annalisa Boquiren, the AOIC is c/2d Lt Bowie Murthy, and the NCO is c/TSgt Akshar 
                         Udas. Reach out to us on Discord (CC - @annalisa_251, AOIC - @lilithswoe, NCO - @axr.28) if you have any questions!</strong> 
                     </p>  
-                </div>         
+                </div>            
+                <img id = "team_photo_desktop" src="images/slideshow_photos/team.webp">
+            </div>
 
-                <!-- Slideshow container -->
+            <div class="ShowOnMobile"> 
+                <div id="about_mobile" >
+                    <p>
+                        Welcome to the <strong>CA-935th Kitty Hawk Air Society!</strong> Kitty Hawk is our AFJROTC unit’s national honor society. We are dedicated to <strong>helping every single cadet</strong>
+                        in the unit with all of their academic needs. By providing <strong>daily walk-in and weekly tutoring on all weekdays, morning, lunch, and afterschool</strong>, we hope 
+                        to help you as tutors, study buddies, and mentors! We also have events such as <strong>study sessions, workshops, lectures, and much more</strong>. Our goal is to create 
+                        new and healthy perspectives on academics, help high schoolers balance their lives as students and cadets, and assist in developing helpful and productive 
+                        study techniques. <strong>The Commander of the Kitty Hawk Air Society is c/2d Lt Annalisa Boquiren, the AOIC is c/2d Lt Bowie Murthy, and the NCO is c/TSgt Akshar 
+                        Udas. Reach out to us on Discord (CC - @annalisa_251, AOIC - @lilithswoe, NCO - @axr.28) if you have any questions!</strong> 
+                    </p>  
+                </div>          
+            </div>
+
+            <!--team photo-->
+            <div class="ShowOnMobile" style="background-color: #8db9df">
+                <img id="team_photo_mobile" src="images/slideshow_photos/team.webp">
+            </div>
+
+            <!--Slideshow-->
+            <div id="info">
+                <!-- Slideshow container - borrowed from W3Schools -->
                 <div class="slideshow-container">
                     <!-- Full-width images with number and caption text -->
-                     <div class="mySlides">
-                        <img src="images/slideshow_photos/team.webp" style="width:100%">
-                        <h5 class="text">Our 2024-2025 team!</h5>
-                    </div>
-
                     <div class="mySlides">
                         <img src="images/slideshow_photos/FY - Olivia.jpg" style="width:100%">
                         <h5 class="text"> Kitty Hawk Tutors! </h5>
@@ -131,7 +281,6 @@
                     <br>
                 </div>
             </div>
-
         </div>
 
         <footer class="HideOnMobile">
